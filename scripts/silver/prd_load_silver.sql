@@ -1,3 +1,8 @@
+/* this script is my etl process.
+this script extracts from the bronze layer, transform the data and loads the transformed data into the silver layer.
+Also added some error handling  for the stored procedre and loading the data
+*/
+
 CREATE or REPLACE PROCEDURE silver.load_silver() LANGUAGE plpgsql
 AS $$
 BEGIN
